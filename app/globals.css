@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@layer base {
+
+    html,
+    body {
+        height: 100%;
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-stone-900 text-white;
+    }
+}

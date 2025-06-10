@@ -16,7 +16,7 @@ export default function Home() {
   blockchain.minePendingTransactions("miner1")
 
   return (
-    <div className="flex items-center justify-center  h-screen w-full bg-neutral-700">
+    <div className="flex items-center justify-center  h-full w-full border border-amber-400">
       <div className=" flex flex-col border border-neutral-500 rounded-md px-4 py-3   items-center justify-center text-neutral-300 font-semibolda">
         <div>
           user1's balance: {blockchain.getBalance("user1")}
