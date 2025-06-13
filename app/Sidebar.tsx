@@ -17,10 +17,10 @@ const Sidebar: React.FC<SidebarProps> = () => {
 
     const pathname = usePathname();
 
-    const isActive = (segment: string) => pathname.includes(segment);
+    const isActive = (segment: string) => segment === "home" ? pathname === "/" : pathname.includes(segment);
 
     return <div className='flex h-full flex-col w-64 border-r border-stone-800 gap-3 px-4 py-2'>
-        <Link href="/home">
+        <Link href="/">
             <div
                 className={`flex mt-4 items-center gap-4  p-2 rounded-md hover:bg-stone-800/75 ${isActive("home") ? "bg-stone-800" : ""}`}
             >

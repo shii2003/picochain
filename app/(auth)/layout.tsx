@@ -1,15 +1,11 @@
-import React from 'react';
-
-type layoutProps = {
-
-};
-
-const layout: React.FC<layoutProps> = () => {
-
+export default function AuthLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
     return (
-        <div className='flex items-center justify-center '>
-
+        <div className="h-screen w-full">
+            {children}
         </div>
-    )
+    );
 }
-export default layout;
